@@ -1,4 +1,10 @@
-
+/**
+ * 
+ * @author Quang Vu
+ * Date created: 10/20/15
+ * A simple stack interface
+ *
+ */
 public interface StackInterface {
    /*
     * Push an object into the stack

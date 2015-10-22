@@ -1,12 +1,25 @@
 import java.util.*;
-
+/**
+ * 
+ * @author Quang Vu
+ * Date created: 10/21/15
+ * Evaluate polish notation using Stack
+ *
+ */
 public class EvaluatePolishNotation {
    private Stack myStack;
    
+   /*
+    * Constructor
+    */
    public EvaluatePolishNotation(Stack myStack){
       this.myStack = myStack;
    }
    
+   /*
+    * isInteger checks a string is integer or not
+    * Return true or false
+    */
    public boolean isInteger(String s){
       try{
          Integer.parseInt(s);
@@ -16,12 +29,18 @@ public class EvaluatePolishNotation {
       return true;
    }
    
+   /*
+    * Evaluate takes an polish equation/notation and compute the result
+    */
    public int evaluate(String equation){
       String[] array = equation.split(" ");
       double result = 0;
       for(String s : array){
+         // If the symbol is an integer -> push in the stack
          if(isInteger(s)){
             myStack.push(Double.valueOf(s));
+         // If not -> has to be an operand 
+         // pop 2 numbers from the stack and compute
          }else{
             double firstValue = (double) myStack.pop();
             double secondValue = (double) myStack.pop();

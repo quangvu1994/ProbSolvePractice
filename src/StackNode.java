@@ -1,4 +1,9 @@
-
+/**
+ * 
+ * @author Quang Vu
+ * Stack structure using Node
+ *
+ */
 public class StackNode {
    Node topNode;
 

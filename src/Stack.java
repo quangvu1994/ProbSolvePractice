@@ -1,5 +1,11 @@
 import java.util.*;
-
+/**
+ * 
+ * @author Quang Vu
+ * Date created: 10/21/15
+ * Stack structure using LinkedList
+ *
+ */
 public class Stack implements StackInterface {
    private LinkedList<Object> list = new LinkedList<Object>();
    
