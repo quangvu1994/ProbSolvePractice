@@ -1,7 +1,11 @@
+package LinkedList;
+
+import LinkedList.Node;
+
 /**
  * 
  * @author Quang Vu
- * Stack structure using Node
+ * StringAndArray.Stack structure using LinkedList.Node
  *
  */
 public class StackNode {

@@ -1,8 +1,10 @@
+package LinkedList;
+
 /**
  * 
  * @author Quang Vu
  * Date created: 10/21/15
- * A simple Node declaration
+ * A simple LinkedList.Node declaration
  *
  */
 public class Node {

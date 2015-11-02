@@ -1,9 +1,11 @@
+package StringAndArray;
+
 import java.util.*;
 /**
  * 
  * @author Quang Vu
  * Date created: 10/21/15
- * Evaluate polish notation using Stack
+ * Evaluate polish notation using StringAndArray.Stack
  *
  */
 public class EvaluatePolishNotation {

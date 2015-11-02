@@ -1,3 +1,5 @@
+package StringAndArray;
+
 import java.util.*;
 /**
  * 
@@ -10,7 +12,7 @@ public class Ismorphic {
 
    /*
     * Populate the HashMap with each word in the first string as a key
-    * associate with correspond word in the second striing as a value
+    * associate with correspond word in the second string as a value
     */
    public HashMap<Character, Character> builder(String s, String t){
       HashMap<Character, Character> myMap = new HashMap<Character, Character>();
@@ -51,16 +53,14 @@ public class Ismorphic {
         Ismorphic solver = new Ismorphic();
         HashMap<Character, Character> map = solver.builder(firstString, secondString);
         String result = solver.convert(firstString, map);
-        System.out.println(result);
+
         // Compare the result of converting first string with the second string
         if(result.equals(secondString)){
            System.out.println("Yes they are Ismorphic");
         } 
-        else{
-           System.out.println("No, they are not Ismorphic");
+        else {
+            System.out.println("No, they are not Ismorphic");
         }
-        
-        
    }
 
 }
