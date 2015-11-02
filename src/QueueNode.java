@@ -11,6 +11,7 @@ public class QueueNode {
    }
    
    public Node dequeue(){
+
       return last;
    }
 }

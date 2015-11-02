@@ -11,7 +11,8 @@ public class Stack implements StackInterface {
    
    @Override
    public void push(Object obj) {
-      list.addFirst(obj);
+
+       list.addFirst(obj);
    }
 
    @Override
