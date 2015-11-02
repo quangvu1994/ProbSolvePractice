@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d709d2dd-75fe-44d3-818c-4e7442861d53" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/EvaluatePolishNotation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Ismorphic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Node.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/QueueNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Solver.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Stack.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/StackInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/StackNode.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/EvaluatePolishNotation.java" afterPath="$PROJECT_DIR$/src/StringAndArray/EvaluatePolishNotation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Ismorphic.java" afterPath="$PROJECT_DIR$/src/StringAndArray/Ismorphic.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Node.java" afterPath="$PROJECT_DIR$/src/LinkedList/Node.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/QueueNode.java" afterPath="$PROJECT_DIR$/src/LinkedList/QueueNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Solver.java" afterPath="$PROJECT_DIR$/src/StringAndArray/Solver.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Stack.java" afterPath="$PROJECT_DIR$/src/StringAndArray/Stack.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/StackInterface.java" afterPath="$PROJECT_DIR$/src/StringAndArray/StackInterface.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/StackNode.java" afterPath="$PROJECT_DIR$/src/LinkedList/StackNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d709d2dd-75fe-44d3-818c-4e7442861d53" name="Default" comment="" />
     <ignored path="QuangVuPracticeProbSolve.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
