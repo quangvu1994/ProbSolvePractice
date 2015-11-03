@@ -1,5 +1,5 @@
 package TreeAndHeap;
-import LinkedList.StackNode;
+import StringAndArray.Stack;
 
 import java.util.ArrayList;
 
@@ -7,20 +7,44 @@ import java.util.ArrayList;
  * Created by Quang on 11/2/15.
  */
 public class TraverseTreeStack {
-    private StackNode myStack = new StackNode();
+    private Stack myStack = new Stack();
     private ArrayList<Integer> iOrder = new ArrayList<Integer>();
     private ArrayList<Integer> preOrd = new ArrayList<Integer>();
     private ArrayList<Integer> postOrd = new ArrayList<Integer>();
 
-    public ArrayList<Integer> inOrder(TreeNode root){
-        return null;
+    public ArrayList<Integer> inOrder(TreeNode node){
+        while(!myStack.isEmpty() || node != null){
+            if(node != null) {
+                myStack.push(node);
+                node = node.left;
+            }else{
+                node = (TreeNode) myStack.pop();
+                iOrder.add(node.value);
+                node = node.right;
+            }
+        }
+        return iOrder;
     }
 
-    public ArrayList<Integer> preOrder(TreeNode root){
-        return null;
+    public ArrayList<Integer> preOrder(TreeNode node){
+        while(!myStack.isEmpty() || node != null){
+            if(node != null){
+                preOrd.add(node.value);
+                if(node.right != null){
+                    myStack.push(node.right);
+                }
+                node = node.left;
+            }else{
+                node = (TreeNode) myStack.pop();
+            }
+        }
+        return preOrd;
     }
 
-    public ArrayList<Integer> postOrder(TreeNode root){
+    public ArrayList<Integer> postOrder(TreeNode node){
+        while(!myStack.isEmpty() || node != null){
+
+        }
         return null;
     }
 
