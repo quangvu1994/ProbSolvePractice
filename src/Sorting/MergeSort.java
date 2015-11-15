@@ -4,7 +4,18 @@ import java.util.*;
  * Created by Quang on 11/2/15.
  */
 public class MergeSort {
-
+    /**
+     * This function will compare each elements of the left and right arrays.
+     * If one element is smaller, it will be added in the correct order of the
+     * final array. Keep doing it until the end of the left or right array.
+     * Finally, the function handle a possible scenario which is either the left
+     * or right array exhausted first. In that case, we will have to add the
+     * rest of the elements from the "not" exhausted array to the final array
+     * @param left an unsorted left array
+     * @param right an unsorted right array
+     * @param bigArray a sorted array by merging the left and right arrays together
+     * @return the sorted array (bigArray)
+     */
     public ArrayList<Integer> merge(ArrayList<Integer> left, ArrayList<Integer> right, ArrayList<Integer> bigArray){
         int nL = left.size(); // length of left array
         int nR = right.size(); // length of right array
@@ -40,6 +51,15 @@ public class MergeSort {
         return bigArray;
     }
 
+    /**
+     * This function will recursively split an unsorted array into half
+     * until there is only one element left in the list. After that, it
+     * will recursively merge and sort those splited array back to the
+     * final array by calling the merge function
+     * @param bigArray an array that we will split into half until
+     *                 the there is only one element left in the list
+     * @return the final sorted array
+     */
     public ArrayList<Integer> mergeSort(ArrayList<Integer> bigArray){
         int n = bigArray.size(); // length of big array
         // return the array if it contains only one or zero element
@@ -67,6 +87,11 @@ public class MergeSort {
         return bigArray;
     }
 
+    /**
+     * Main function create a sample unsorted array and use the merge
+     * algorithm to sort the array
+     * @param args empty argument list
+     */
     public static void main(String args[]){
         Integer[] sample = {2,1,4,6,10,8,3,7,5,9};
         ArrayList<Integer> myArray = new ArrayList<Integer>();
