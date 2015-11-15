@@ -27,12 +27,12 @@
       <file leaf-file-name="MergeSort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Sorting/MergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.765625">
-              <caret line="107" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.2578125">
+              <caret line="93" column="50" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
               <folding>
-                <element signature="e#2831#2840#0" expanded="true" />
-                <element signature="e#2892#2901#0" expanded="true" />
-                <element signature="e#3510#3519#0" expanded="true" />
+                <element signature="e#2858#2867#0" expanded="true" />
+                <element signature="e#2919#2928#0" expanded="true" />
+                <element signature="e#3514#3523#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,9 +83,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="688" />
+    <option name="x" value="590" />
     <option name="y" value="23" />
-    <option name="width" value="592" />
+    <option name="width" value="690" />
     <option name="height" value="683" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -520,7 +520,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="688" y="23" width="592" height="683" extended-state="0" />
+    <frame x="590" y="23" width="690" height="683" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -607,9 +607,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2831#2840#0" expanded="true" />
-            <element signature="e#2892#2901#0" expanded="true" />
-            <element signature="e#3510#3519#0" expanded="true" />
+            <element signature="e#2858#2867#0" expanded="true" />
+            <element signature="e#2919#2928#0" expanded="true" />
+            <element signature="e#3514#3523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -633,9 +633,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2831#2840#0" expanded="true" />
-            <element signature="e#2892#2901#0" expanded="true" />
-            <element signature="e#3510#3519#0" expanded="true" />
+            <element signature="e#2858#2867#0" expanded="true" />
+            <element signature="e#2919#2928#0" expanded="true" />
+            <element signature="e#3514#3523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -687,9 +687,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#2831#2840#0" expanded="true" />
-            <element signature="e#2892#2901#0" expanded="true" />
-            <element signature="e#3510#3519#0" expanded="true" />
+            <element signature="e#2858#2867#0" expanded="true" />
+            <element signature="e#2919#2928#0" expanded="true" />
+            <element signature="e#3514#3523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -727,9 +727,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#2831#2840#0" expanded="true" />
-            <element signature="e#2892#2901#0" expanded="true" />
-            <element signature="e#3510#3519#0" expanded="true" />
+            <element signature="e#2858#2867#0" expanded="true" />
+            <element signature="e#2919#2928#0" expanded="true" />
+            <element signature="e#3514#3523#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -976,12 +976,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sorting/MergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.765625">
-          <caret line="107" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.2578125">
+          <caret line="93" column="50" selection-start-line="93" selection-start-column="50" selection-end-line="93" selection-end-column="50" />
           <folding>
-            <element signature="e#2831#2840#0" expanded="true" />
-            <element signature="e#2892#2901#0" expanded="true" />
-            <element signature="e#3510#3519#0" expanded="true" />
+            <element signature="e#2858#2867#0" expanded="true" />
+            <element signature="e#2919#2928#0" expanded="true" />
+            <element signature="e#3514#3523#0" expanded="true" />
           </folding>
         </state>
       </provider>

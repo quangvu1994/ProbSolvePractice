@@ -16,7 +16,7 @@ public class MergeSort {
      * @param bigArray a sorted array by merging the left and right arrays together
      * @return the sorted array (bigArray)
      */
-    public ArrayList<Integer> merge(ArrayList<Integer> left, ArrayList<Integer> right, ArrayList<Integer> bigArray){
+    public void merge(ArrayList<Integer> left, ArrayList<Integer> right, ArrayList<Integer> bigArray){
         int nL = left.size(); // length of left array
         int nR = right.size(); // length of right array
         int i = 0; // mark the unpicked in left array
@@ -37,6 +37,7 @@ public class MergeSort {
             k++;
         }
         // handling the part when one of the left/right array is exhausted first
+        // Search for the array that still have elements, add them to the final array
         while(i < nL){
             bigArray.set(k, left.get(i));
             i++;
@@ -47,8 +48,6 @@ public class MergeSort {
             j++;
             k++;
         }
-
-        return bigArray;
     }
 
     /**
@@ -60,12 +59,12 @@ public class MergeSort {
      *                 the there is only one element left in the list
      * @return the final sorted array
      */
-    public ArrayList<Integer> mergeSort(ArrayList<Integer> bigArray){
+    public void mergeSort(ArrayList<Integer> bigArray){
         int n = bigArray.size(); // length of big array
         // return the array if it contains only one or zero element
         // this is the base case for our recursive call too
         if( n < 2){
-            return null;
+            return;
         }
 
         int mid = n/2;
@@ -84,7 +83,6 @@ public class MergeSort {
         mergeSort(right);
         merge(left, right, bigArray);
 
-        return bigArray;
     }
 
     /**
@@ -93,7 +91,7 @@ public class MergeSort {
      * @param args empty argument list
      */
     public static void main(String args[]){
-        Integer[] sample = {2,1,4,6,10,8,3,7,5,9};
+        Integer[] sample = {8,2,100,43,22,16,10,24};
         ArrayList<Integer> myArray = new ArrayList<Integer>();
 
         for(int i = 0; i < sample.length; i++){
@@ -102,6 +100,7 @@ public class MergeSort {
 
 
         MergeSort mergeAlgorithm = new MergeSort();
-        System.out.println(mergeAlgorithm.mergeSort(myArray));
+        mergeAlgorithm.mergeSort(myArray);
+        System.out.println(myArray);
     }
 }
