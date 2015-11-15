@@ -86,7 +86,7 @@ public class MergeSort {
     }
 
     /**
-     * Main function create a sample unsorted array and use the merge
+     * Main function create a sample unsorted array and use the merge-sort
      * algorithm to sort the array
      * @param args empty argument list
      */
@@ -98,9 +98,9 @@ public class MergeSort {
             myArray.add(sample[i]);
         }
 
-
+        System.out.println("Unsorted array: " + myArray);
         MergeSort mergeAlgorithm = new MergeSort();
         mergeAlgorithm.mergeSort(myArray);
-        System.out.println(myArray);
+        System.out.println("Sorted array: " + myArray);
     }
 }
