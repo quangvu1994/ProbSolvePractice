@@ -82,7 +82,6 @@ public class MergeSort {
         mergeSort(left);
         mergeSort(right);
         merge(left, right, bigArray);
-
     }
 
     /**
