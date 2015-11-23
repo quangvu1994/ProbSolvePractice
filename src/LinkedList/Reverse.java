@@ -10,9 +10,23 @@ import java.util.*;
  * Reverse a linked list using iterative way
  */
 public class Reverse {
-    public LinkedList reverse(LinkedList list){
-        Node cursor = list.head;
-        return list;
+
+    public Node reverse(Node head) {
+        if(head == null || head.next == null){
+            return head;
+        }
+
+        Node endMarker = head;
+        Node headMarker = head;
+        while(endMarker.next != null){
+            Node temp = endMarker.next.next;
+            head = endMarker.next;
+            head.next = headMarker;
+            headMarker = head;
+            endMarker.next = temp;
+        }
+
+        return head;
     }
 
     public static void main (String args[]){
@@ -27,6 +41,9 @@ public class Reverse {
         }
 
         Reverse machine = new Reverse();
-        machine.reverse(list);
+        Node newHead = machine.reverse(list.head);
+
+        GetElement printer = new GetElement();
+        printer.printList(newHead);
     }
 }
