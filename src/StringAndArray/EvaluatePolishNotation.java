@@ -70,7 +70,6 @@ public class EvaluatePolishNotation {
       int finalAnswer = lc.evaluate(equation);
       System.out.println(finalAnswer);
       scanner.close();
-      
    }
 
 }
