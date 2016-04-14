@@ -6,7 +6,7 @@ import java.util.*;
  */
 public class InsertionSort {
 
-    public int[] sort(int[] array){
+    public void sort(int[] array){
         int temp;
         for(int i = 1; i < array.length; i++){
             for(int j = i; j > 0; j--){
@@ -21,16 +21,14 @@ public class InsertionSort {
                 }
             }
         }
-
-        return array;
     }
 
 
     public static void main(String args[]){
         int[] sampleArray ={1,4,3,2,6,5};
         InsertionSort machine = new InsertionSort();
-        int[] sortedArray = machine.sort(sampleArray);
-        for(int a : sortedArray){
+        machine.sort(sampleArray);
+        for(int a : sampleArray){
             System.out.print(a);
         }
     }
