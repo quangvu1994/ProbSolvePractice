@@ -6,6 +6,7 @@ import java.util.*;
 public class MergeSort {
     /**
      * This function will compare each elements of the left and right arrays.
+     * Note: elements in left and right array are ALWAYS in order
      * If one element is smaller, it will be added in the correct order of the
      * final array. Keep doing it until the end of the left or right array.
      * Finally, the function handle a possible scenario which is either the left
@@ -90,7 +91,7 @@ public class MergeSort {
      * @param args empty argument list
      */
     public static void main(String args[]){
-        Integer[] sample = {8,2,100,43,22,16,10,24};
+        Integer[] sample = {2,4,1,3};
         ArrayList<Integer> myArray = new ArrayList<Integer>();
 
         for(int i = 0; i < sample.length; i++){
