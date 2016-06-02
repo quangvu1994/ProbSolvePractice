@@ -10,7 +10,8 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
         MergeSortTest.class,
-        InsertionSortTest.class
+        InsertionSortTest.class,
+        SelectionSortTest.class
 })
 
 public class TestSuite {
