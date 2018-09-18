@@ -25,5 +25,15 @@
     <audio data-key="65" src="chimpanzee.wav"></audio>
     <audio data-key="83" src="tiger.mp3"></audio>
     <audio data-key="68" src="dog.mp3"></audio>
+
+    <script>
+        // Since there is no other block, listen keydown event on window
+        window.addEventListener("keydown", function(e){
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+            if(audio != null) {
+                audio.play();
+            }
+        });
+    </script>
 </body>
 </html>
