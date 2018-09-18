@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Animal Sound</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <div data-key="65" class="key">
             <kbd>A</kbd>
-            <span>chimpanzee</span>
+            <span class="sound">chimpanzee</span>
         </div>
         <div data-key="83" class="key">
             <kbd>S</kbd>
-            <span>Tiger</span>
+            <span class="sound">Tiger</span>
         </div>
-        <div>
+        <div data-key="68" class="key">
             <kbd>D</kbd>
-            <span>Dog</span>
+            <span class="sound">Dog</span>
         </div>
     </main>
 
@@ -27,13 +28,26 @@
     <audio data-key="68" src="dog.mp3"></audio>
 
     <script>
-        // Since there is no other block, listen keydown event on window
-        window.addEventListener("keydown", function(e){
+        function playsound(e) {
             const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
             if(audio != null) {
+                audio.currentTime = 0;
                 audio.play();
+                // add key transformation
+                const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+                key.classList.add("playing");
             }
-        });
+        }
+        
+        function removeTransformation(e) {
+            if (e.propertyName !== "transform") return;
+            e.target.classList.remove("playing");
+        }
+        // Apply remove transformation event to all keys after the transition has eneded
+        const keys = document.querySelectorAll(".key");
+        keys.forEach(key => key.addEventListener("transitionend", removeTransformation));
+        // Since there is no other block, listen keydown event on window
+        window.addEventListener("keydown", playsound);
     </script>
 </body>
 </html>
