@@ -1,5 +1,5 @@
 function apply_controls_input(e) {
-    // don't listen to input events after reaching the input's parent element
+    // only listen to input element
     if (e.target.tagName == "INPUT") {
         const suffix = e.target.dataset.sizing || "";
         document.documentElement.style.setProperty(`--${e.target.name}`, e.target.value + suffix);
