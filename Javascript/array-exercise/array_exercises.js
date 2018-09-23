@@ -40,6 +40,8 @@ console.table(sort_result);
 const reduce_result = inventors.reduce((total, inventor) => total + (inventor.passed - inventor.year), 0);
 console.log(reduce_result);
 // 5. Sort the inventors by years lived
+const sort_years_lived = inventors.sort((a, b) => (a.passed - a.year) > (b.passed - b.year) ? 1 : -1);
+console.table(sort_years_lived);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
@@ -47,7 +49,24 @@ console.log(reduce_result);
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+const sort_alpha = people.sort((firstPerson, secondPerson) => {
+    const [, firstLN] = firstPerson.split(', ');
+    const [, secondLN] = secondPerson.split(", ");
+    return firstLN > secondLN ? 1 : -1;
+});
+
+console.table(sort_alpha);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
 const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+const sum_instance_result = data.reduce((total_per_obj, obj) => {
+    // initialize if object not in total_per_obj object
+    if (!total_per_obj[obj]) {
+        total_per_obj[obj] = 0;
+    }
+    total_per_obj[obj]++;
+    return total_per_obj;
+}, {});
+
+console.log(sum_instance_result);
