@@ -75,7 +75,24 @@
       font-size: 4em;
     }
 
+    .panel > *:first-child {
+      transform: translateY(-100%);
+    }
+
+    .panel.open-active > *:first-child {
+      transform: translateY(0);
+    }
+
+    .panel > *:last-child {
+      transform: translateY(100%);
+    }
+
+    .panel.open-active > *:last-child {
+      transform: translateY(0);
+    }
+
     .panel.open {
+      flex: 5;
       font-size:40px;
     }
 
@@ -110,11 +127,7 @@
     </div>
   </div>
 
-  <script>
-
-  </script>
-
-
+  <script src='flex.js'></script>
 
 </body>
 </html>
