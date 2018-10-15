@@ -4,6 +4,13 @@ const cities = []
 // fetch json data
 fetch(endpoint).then(blob => blob.json()).then(data => cities.push(...data));
 
+const suggestions = document.querySelector('.suggestions');
+const searchBox = document.querySelector('.search');
+
+/**
+ * Get an array of cities that matched the search keyword
+ * @param {*} keyword 
+ */
 function search(keyword) {
     return cities.filter(place => {
         // convert keyword var into regexp since match method takes regex
@@ -12,9 +19,13 @@ function search(keyword) {
     })
 }
 
+/**
+ * Go through the result list > apply some css and display it
+ */
 function displaySearchResult() {
     const resultArr  = search(this.value);
     const html = resultArr.map(place => {
+        // highlight the found keyword
         const regex = new RegExp(this.value, 'gi');
         const cityName = place.city.replace(regex, `<span class='hl'>${this.value}</span>`);
         const stateName = place.state.replace(regex, `<span class='hl'>${this.value}</span>`);
@@ -28,6 +39,4 @@ function displaySearchResult() {
     suggestions.innerHTML = html;
 }
 
-const suggestions = document.querySelector('.suggestions');
-const searchBox = document.querySelector('.search');
 searchBox.addEventListener('keyup', displaySearchResult);
