@@ -5,19 +5,26 @@ let last_checked;
 function handle_checkbox(e) {
     // only handle the event if the target is input/checkbox type
     if (e.target.tagName == 'INPUT') {
+        if (!last_checked) {
+            last_checked = e.target;
+            return
+        }
         let trigger_checking = false;
-
-        if(e.target.checked && e.shiftKey) {
+        if(e.shiftKey && last_checked.checked) {
             checkboxes.forEach(checkbox => {
+                // don't want to check any other box if hold shift for one checkbox. 
+                if (checkbox === last_checked && checkbox === e.target) {
+                    return
+                }
                 if (checkbox === last_checked || checkbox === e.target) {
                     trigger_checking = !trigger_checking;
                 }
 
                 if (trigger_checking) {
                     checkbox.checked = true;
-                }
+                } 
             });
-        }
+        } 
         last_checked = e.target;
     }
 
