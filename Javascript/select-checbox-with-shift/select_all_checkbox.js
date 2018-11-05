@@ -10,13 +10,14 @@ function handle_checkbox(e) {
             return
         }
         let trigger_checking = false;
-        if(e.shiftKey && last_checked.checked) {
+        if(e.shiftKey) {
             checkboxes.forEach(checkbox => {
                 // don't want to check any other box if hold shift for one checkbox. 
                 if (checkbox === last_checked && checkbox === e.target) {
                     return;
                 }
                 if (checkbox === last_checked || checkbox === e.target) {
+                    last_checked.checked = true;
                     trigger_checking = !trigger_checking;
                     return;
                 }
@@ -27,10 +28,10 @@ function handle_checkbox(e) {
                     checkbox.checked = false;
                 }
             });
-            // don't update last_checked
-            return;
         } 
-        last_checked = e.target;
+        if (!last_checked.checked) { 
+            last_checked = e.target;
+        }
     }
 
     e.stopPropagation();
