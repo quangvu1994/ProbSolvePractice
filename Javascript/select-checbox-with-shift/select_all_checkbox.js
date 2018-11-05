@@ -28,10 +28,9 @@ function handle_checkbox(e) {
                     checkbox.checked = false;
                 }
             });
+            return;
         } 
-        if (!last_checked.checked) { 
-            last_checked = e.target;
-        }
+        last_checked = e.target;
     }
 
     e.stopPropagation();
