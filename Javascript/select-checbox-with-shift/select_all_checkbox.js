@@ -14,16 +14,21 @@ function handle_checkbox(e) {
             checkboxes.forEach(checkbox => {
                 // don't want to check any other box if hold shift for one checkbox. 
                 if (checkbox === last_checked && checkbox === e.target) {
-                    return
+                    return;
                 }
                 if (checkbox === last_checked || checkbox === e.target) {
                     trigger_checking = !trigger_checking;
+                    return;
                 }
 
                 if (trigger_checking) {
                     checkbox.checked = true;
-                } 
+                } else {
+                    checkbox.checked = false;
+                }
             });
+            // don't update last_checked
+            return;
         } 
         last_checked = e.target;
     }
