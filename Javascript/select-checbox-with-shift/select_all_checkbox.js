@@ -16,19 +16,17 @@ function handle_checkbox(e) {
                 if (checkbox === last_checked && checkbox === e.target) {
                     return;
                 }
+                
                 if (checkbox === last_checked || checkbox === e.target) {
-                    last_checked.checked = true;
                     trigger_checking = !trigger_checking;
+                    last_checked.checked = e.target.checked;
                     return;
                 }
 
                 if (trigger_checking) {
-                    checkbox.checked = true;
-                } else {
-                    checkbox.checked = false;
+                    checkbox.checked = e.target.checked;
                 }
             });
-            return;
         } 
         last_checked = e.target;
     }
